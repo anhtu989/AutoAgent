@@ -80,3 +80,10 @@ retry_min_wait = 15
 retry_max_wait = 120
 retry_multiplier = 2
 ```
+
+
+## 更新说明
+
+- 添加新功能
+- 修复错误
+- 改进性能
