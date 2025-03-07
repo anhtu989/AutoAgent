@@ -21,7 +21,7 @@
 
 Welcome to AutoAgent! AutoAgent is a **Fully-Automated** and highly **Self-Developing** framework that enables users to create and deploy LLM agents through **Natural Language Alone**. 
 
-## ✨Key Features
+<!-- 文档更新于 {timestamp} -->
 
 * 🏆 Top Performer on the GAIA Benchmark
 </br>AutoAgent has ranked the **#1** spot among open-sourced methods, delivering comparable performance to **OpenAI's Deep Research**.
