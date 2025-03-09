@@ -1031,3 +1031,6 @@ class MarkdownConverter:
     def register_page_converter(self, converter: DocumentConverter) -> None:
         """Register a page text converter."""
         self._page_converters.insert(0, converter)
+
+
+# TODO: 添加文档说明
