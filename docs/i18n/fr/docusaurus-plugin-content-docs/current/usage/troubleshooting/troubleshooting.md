@@ -1,5 +1,4 @@
-
-
+markdown
 # 🚧 Dépannage
 
 :::tip
@@ -11,9 +10,9 @@ OpenHands ne prend en charge Windows que via WSL. Veuillez vous assurer d'exécu
 **Description**
 
 Lors de l'exécution d'OpenHands, l'erreur suivante est observée :
-```
+
 Launch docker client failed. Please make sure you have installed docker and started docker desktop/daemon.
-```
+
 
 **Résolution**
 
@@ -22,6 +21,7 @@ Essayez ces étapes dans l'ordre :
 * Si vous utilisez Docker Desktop, assurez-vous que `Settings > Advanced > Allow the default Docker socket to be used` est activé.
 * Selon votre configuration, vous devrez peut-être activer `Settings > Resources > Network > Enable host networking` dans Docker Desktop.
 * Réinstallez Docker Desktop.
+
 ---
 
 # Spécifique au flux de travail de développement
@@ -30,17 +30,23 @@ Essayez ces étapes dans l'ordre :
 **Description**
 
 Les tentatives de démarrage d'une nouvelle session échouent et des erreurs contenant des termes comme les suivants apparaissent dans les logs :
-```
+
 debian-security bookworm-security
 InRelease At least one invalid signature was encountered.
-```
+
 
 Cela semble se produire lorsque le hash d'une bibliothèque externe existante change et que votre instance docker locale a
 mis en cache une version précédente. Pour contourner ce problème, veuillez essayer ce qui suit :
 
 * Arrêtez tous les conteneurs dont le nom a le préfixe `openhands-runtime-` :
-  `docker ps --filter name=openhands-runtime- --filter status=running -aq | xargs docker stop`
+  bash
+  docker ps --filter name=openhands-runtime- --filter status=running -aq | xargs docker stop
+  
 * Supprimez tous les conteneurs dont le nom a le préfixe `openhands-runtime-` :
-  `docker rmi $(docker images --filter name=openhands-runtime- -q --no-trunc)`
+  bash
+  docker rmi $(docker images --filter name=openhands-runtime- -q --no-trunc)
+  
 * Arrêtez et supprimez tous les conteneurs / images dont le nom a le préfixe `openhands-runtime-`
-* Nettoyez les conteneurs / images : `docker container prune -f && docker image prune -f`
+* Nettoyez les conteneurs / images :
+  bash
+  docker container prune -f && docker image prune -f
