@@ -64,7 +64,7 @@ class _SpecialEventReturn:
             )
 
 
-# (group_event_results, global ctx set by user) -> result
+# 重构代码
 EventFunction = Callable[
     [Optional[EventInput], Optional[Any]], Awaitable[Union[Any, _SpecialEventReturn]]
 ]
