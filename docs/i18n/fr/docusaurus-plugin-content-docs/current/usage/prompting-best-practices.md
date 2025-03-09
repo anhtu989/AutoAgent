@@ -1,5 +1,4 @@
-
-
+markdown
 # Meilleures pratiques pour les prompts
 
 Lorsque vous travaillez avec le développeur de logiciels OpenHands AI, il est crucial de fournir des prompts clairs et efficaces. Ce guide décrit les meilleures pratiques pour créer des prompts qui produiront les réponses les plus précises et utiles.
