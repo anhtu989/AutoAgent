@@ -23,3 +23,14 @@ L'idée conceptuelle est illustrée ci-dessous. À chaque tour, l'agent peut :
 https://github.com/All-Hands-AI/OpenHands/assets/38853559/f592a192-e86c-4f48-ad31-d69282d5f6ac
 
 _Exemple de CodeActAgent avec `gpt-4-turbo-2024-04-09` effectuant une tâche de science des données (régression linéaire)_.
+
+
+## 变更记录
+
+### 新增
+- 特性 1
+- 特性 2
+
+### 修复
+- 问题 1
+- 问题 2
